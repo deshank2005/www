@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch Free Films</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #000000, #1a1a2e);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #ff0080;
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff0080; }
+      to { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff0080; }
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      background: #222;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff0080;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+    }
+    .watch-btn {
+      display: inline-block;
+      background: #ff0080;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    .watch-btn:hover {
+      background: #e60073;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎬 Watch Free Films</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x180?text=Movie+1" alt="Movie 1">
+    <div class="card-content">
+      <h2 class="card-title">Movie Title 1</h2>
+      <a class="watch-btn" href="#">Watch Now</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x180?text=Movie+2" alt="Movie 2">
+    <div class="card-content">
+      <h2 class="card-title">Movie Title 2</h2>
+      <a class="watch-btn" href="#">Watch Now</a>
+    </div>
+  </div>
+  <!-- Add more movie cards as needed -->
+</div>
+
+<footer>
+  © 2025 FreeFilmSite. All Rights Reserved.
+</footer>
+
+</body>
+</html>
